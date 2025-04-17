@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.::JULKER::.</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <style>
+        body{
+            font-family: Impact,Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            background-color: #affade;
+            background-image: url(./img/fondo.png);
+            margin: 0;
+        }
+        /*Centrar el minilogo*/
+        .circulo{
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            margin: 0;
+            display: flex;
+        }
+        .minilogo{
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            text-align: center;    
+        }
+        /*Cambiar ancho y color del borde del minilogo*/
+        .border-jk{
+            border: 3px solid #92c5fc;
+        }
+        /*Fondo del menu*/
+        nav{
+            background-color: #92c5fc;
+            flex-wrap: wrap;
+        }
+        .navbar-item{
+            color: #333333;
+            text-decoration: none;
+            padding: 10px  20px;
+            transition: transform 0.3s ease;
+        }
+        .navbar-item:hover{
+            color: rgb(0, 225, 255);
+            background-color: white;
+            border-radius: 10px;
+            transform: scale(1.1);
+        }
+        .logo{
+            max-width: 25%;
+            height: auto;
+    
+        }
+        .banner{
+            background-color: #c6b5f9;
+              
+        }
+        h2{
+            font-size: 8vw;
+            text-shadow: 5px 5px 1px #ffffff;
+        }
+        .hero{
+            text-align: center;
+        }
+        .card{
+            margin: 1rem auto;
+            box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.5);
+            color: #333333;
+            border-radius: 20px;
+            max-width: 800px;
+            transition: transform 0.3s ease;
+            background-color: rgba( 255, 255, 255, 0.8);
+            padding: 1rem;
+        }
+        .card:hover{
+            transform: scale(1.1);
+        }
+        h3{
+            margin: 10px 20px;
+        }
+        ul{
+            margin: 0 20px 20px;
+        }
+        .parrafos{
+            margin: 0 20px 20px;
+            
+        }
+        .footer{
+            background-color: #92c5fc;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            color: #333333;
+        }
+        p, li{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        @media (max-width: 576px){
+            h2 {
+                font-size: 12vw;
+            }
+            .navbar-item{
+                padding: 5px 10px;
+                font-size: 4vw;
+            }
+            h3{
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }
+        .vinculo{
+            text-decoration: none;
+        }
+        .imgpago{
+            max-width: 25%;
+            height: auto;
+            box-shadow: 4px 4px 5px #333333;
+            transition: transform 0.3s;
+        }
+        .imgpago:hover{
+            transform: scale(1.1);
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="container-fluid circulo  py-1">
+            <h1 class="border-jk border-3 rounded-circle p-0 minilogo" id="jk">JK</h1>
+        </div>
+        <nav class="navbar justify-content-center">
+            
+            <a class="navbar-item" href="#quienes_somos">¿QUIENES SOMOS?</a>
+            <a class="navbar-item" href="#servicios">SERVICIOS</a>
+            <a class="navbar-item" href="#productos">PRODUCTOS</a>
+            <a class="navbar-item" href="#contactos">CONTACTO</a>
+            
+        </nav>
+    </header>    
+        <div class="container-fluid text-center banner">
+            <div class="row align-items-center">
+                <div class="col-sm-6">
+                    <div class="py-1">
+                        <h2 class="mb-0">JULKER</h2>
+                        <p><em><strong>Somos tu mejor impresión</strong> </em></p>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <img class="logo img-fluid" src="img/julker_logo.png" alt="logo de Julker">
+                </div>
+            
+            </div>
+        </div>
+    
+    <section class="hero pt-3">
+        <h3>Impresiones, Fotocopias, Diseños y Papelería</h3>
+        
+    </section>
+
+    <section>
+        <div class="card" id="quienes_somos">
+            <h3>¿Quienes somos?</h3>
+            
+            <p class="parrafos"><strong>JULKER</strong>  es un emprendimiento dedicado a ofrecer soluciones rápidas, económicas y de calidad en servicios de impresión, fotocopias, diseño gráfico y papelería. </p>
+            <p class="parrafos">Nuestro objetivo es facilitar el acceso a productos escolares y herramientas de oficina a estudiantes, profesionales y empresas de la comunidad. </p>
+            <p class="parrafos">Con atención personalizada, tecnología adecuada y un compromiso constante con el buen servicio, en JULKER trabajamos para que cada impresión refleje lo mejor de ti.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="card" id="servicios">
+            <h3>Servicios</h3>  
+                <ul>
+                    <li>Impresión de trabajos escritos, tareas escolares y hojas de vida</li>
+                    <li>Impresión de resultados de laboratorio y clínicas</li>
+                    <li>Fotocopias</li>
+                    <li>Escaneo de documentos</li>
+                    <li>Diseños personalizados</li>
+                </ul> 
+        </div>
+    </section>
+
+    <section>
+        <div class="card" id="productos">
+            <h3>Productos</h3>
+                <ul>
+                    <li>Cuadernos de 100 hojas (Rayados y Cuadriculados)</li>
+                    <li>Lápices</li>
+                    <li>Lapiceros</li>
+                    <li>Borradores</li>
+                    <li>Sacapuntas</li>
+                </ul>
+        </div>
+    </section>
+
+    <section>
+        <div class="card" id="contactos">
+            <h3>Contactos</h3>
+            <p class="parrafos">
+                Escríbenos o visítanos para más información.
+            </p>
+            <p class="parrafos">
+                Email: 
+                <a class="vinculo" href="mailto:julker2712@gmail.com">
+                        julker2712@gmail.com
+                </a>
+            </p>
+            <p class="parrafos">
+                WhatsApp: 
+                <a class="vinculo" href="https://wa.me/573242643941" target="_blank">
+                    +57 324 264 3941
+                </a>
+            </p>
+            <p class="parrafos">
+                <strong>¡Ahora puedes pagar fácilmente!</strong> 
+            </p> 
+            <p class="parrafos">Aceptamos pagos por medio de <span style="color: purple;">Nequi</span> y <span style="color: red;">Daviplata</span> para tu comodidad.
+            </p>
+            
+            <div class="container-fluid  text-center">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img class="imgpago img-fluid rounded-circle" src="img/nequi.jpg" alt="Nequi" title="Pago por Nequi" onclick="copiarNumero('3234392680')">
+
+                    </div>
+            <br>
+                    <div class="col-sm-6">   
+                        <img class="imgpago img-fluid rounded-circle" src="img/daviplata.png" alt="DaviPlata" title="Pago por DaviPlata" onclick="copiarNumero('3234392680')">
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy;<strong>2025 JULKER. Todos los derechos reservados.</strong> </p>
+    </footer>
+
+    <a href="#jk" id="btnVolverArriba" style="position: fixed; bottom: 100px; right: 20px; display: none; z-index: 1000; font-size: 2rem; color: white; background-color: #0d6efd; border-radius: 50%; width: 50px; height: 50px; text-align: center; line-height: 50px;">
+    <i class="bi bi-arrow-up"></i>
+    </a>
+         
+    <script>
+        /*Codigo para copiar el numero de pago*/
+        function copiarNumero(numero) {
+          navigator.clipboard.writeText(numero)
+            .then(() => alert('El Número para realizar el pago ha sido copiado:\n \n ' + numero))
+            .catch(err => console.error('Error al copiar', err));
+        }
+
+        /*codigo para poder desplazarme desde abjo hasta arriba en la pagina*/
+        const btnVolverArriba = document.getElementById("btnVolverArriba");
+
+        window.onscroll = function () {
+            if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                btnVolverArriba.style.display = "block";
+            } else {
+                btnVolverArriba.style.display = "none";
+            }
+        };
+    </script>
+      
+    
+</body>
+</html>
