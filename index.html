@@ -27,7 +27,11 @@
             width: 50px;
             height: 50px;
             margin: 5px;
-            text-align: center;    
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 20px;
         }
         /*Cambiar ancho y color del borde del minilogo*/
         .border-jk{
@@ -124,6 +128,14 @@
         .imgpago:hover{
             transform: scale(1.1);
             cursor: pointer;
+        }
+        @media (max-width: 768px){
+            .card:hover{
+                transform: none;
+            }
+            .imgpago:hover{
+                transform: none;
+            }
         }
     </style>
 
@@ -223,13 +235,13 @@
             </p>
             
             <div class="container-fluid  text-center">
-                <div class="row">
-                    <div class="col-sm-6">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-6 mb-3">
                         <img class="imgpago img-fluid rounded-circle" src="img/nequi.jpg" alt="Nequi" title="Pago por Nequi" onclick="copiarNumero('3234392680')">
 
                     </div>
             <br>
-                    <div class="col-sm-6">   
+                    <div class="col-12 col-sm-6 mb-3">   
                         <img class="imgpago img-fluid rounded-circle" src="img/daviplata.png" alt="DaviPlata" title="Pago por DaviPlata" onclick="copiarNumero('3234392680')">
                     </div> 
                 </div>
